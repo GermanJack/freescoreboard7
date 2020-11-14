@@ -1,4 +1,4 @@
-# freescoreboard
+# freeScoreBoard
 
 A software to utilize your PC as a scoreboard.
 
