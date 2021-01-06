@@ -1,0 +1,54 @@
+﻿Spiel Status
+0 - Spiel undefiniert	-> Gegner noch nicht ermittelt
+1 - Spiel teildefiniert	-> erst eine Mannschaft ermittelt
+2 - Spiel definiert		-> beide Mannschaften ermittelt Spiel offen
+3 - Spiel beendet
+4 - Spiel beendet (beide nicht angetreten)
+
+Runden Status
+0 - undefiniert
+1 - definiert
+2 - aktiv
+3 - beendet
+
+Ereignisarten
+01 - Spielzeit Start
+02 - Spielzeit Stop
+03 - Pausenzeit Start
+04 - Pausenzeit Stop
+05 - Tor
+06 - Foul
+07 - Strafe
+08 - freie Zeit Start
+09 - freie Zeit Stop
+10 - Tor (Reset)
+11 - Foul (Reset)
+12 - Nachspielzeit Start
+13 - Nachspielzeit Stop
+14 - Sekundenzähler Start
+15 - Sekundenzähler Stop
+16 - Time out left
+17 - Time out left (Reset)
+
+Strafarten
+01 - Verwarnung
+02 - Verweis
+03 - Zeitstrafe
+
+data-oid = objektID
+data-cid = Textvariable
+data-bgid = Bildvariable
+data-tid = Tabellenvariable
+data-speed = Geschw. der Laufschrift
+
+data-txtinhalt = Text
+
+<meta name="sort" content="[n]"> n = integer with defines the page sequence 
+
+
+
+TimerEvent_0		Uhr stoppen
+TimerEvent_1		andere Uhr starten
+TimerEvent_2		andere Uhr stoppen
+TimerEvent_3		Audio-Datei abspielen
+TimerEvent_4		Anzeige Wechseln

@@ -1,0 +1,46 @@
+﻿										server to client:
+setDataID:[id]:[wert] -> setzt innerText bei div / setzt value bei input
+setPicID:[id]:[wert] -> setzt Hintergrundbil (get nur in display pages)
+setLabelID:[id]:[wert]	-> setzt innerText bei div / ?? bei input
+
+client to server:
+[typ]|[objekt]|[daten]
+
+typ:
+req = benötige daten
+set = setze daten
+css = styleobjekt
+
+objekt:
+bei req ist das benötigte objekt
+bei set ist objekt die Variable
+bei	css ist objekt der style type
+
+daten:
+bei req gibt es keine daten
+bei set der Variablewert
+bei	css der style wert
+
+
+server to client:
+Befehlsaufbau:
+[Seite]|[Befehlsart]|[Inhalt]|[Werte]
+
+Seitenarten:
+AL = Alle (Brodcast)
+AN = Anzeige
+DD = DispalyDesigner
+SK = Spielkontrolle
+MS = Mannschaftenstamm
+
+Befehlsarten:
+JS = Javascript
+JN = daten die via json in state geschrieben werden
+
+Inhalt:
+bei JS leer
+bei JN welche objekte sind im JSon
+
+Werte:
+bei JS immer ausführbahrer JavaScript Code
+bei JN immer JSon inhalte
