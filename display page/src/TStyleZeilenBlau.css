@@ -1,0 +1,53 @@
+table.ZeilenBlau {
+    border: 0vh;
+    width: 100%;
+    text-align: left;
+    border-collapse: seperate;
+    border-spacing: 0 1vh;
+    margin: 03vh;
+}
+
+table.ZeilenBlau td,
+table.ZeilenBlau th {
+    border: 0.1vh solid #000000;
+    padding: 0.3vh 0.3vh;
+}
+
+table.ZeilenBlau th {
+    border-color: #000000;
+    font-weight: bold;
+    border-left: 0.1vh solid #000000;
+    background: #1C6EA4;
+    color: #FFFFFF;
+}
+
+table.ZeilenBlau td {
+    background: #D0E4F5;
+}
+
+table.ZeilenBlau tr:nth-child(even) {
+}
+
+table.ZeilenBlau th:first-child {
+    border-left-style: solid #000000;
+    border-top-left-radius: 1vh; 
+    border-bottom-left-radius: 1vh;
+}
+
+table.ZeilenBlau th:last-child {
+    border-right-style: solid #000000;
+    border-bottom-right-radius: 1vh; 
+    border-top-right-radius: 1vh; 
+}
+
+table.ZeilenBlau td:first-child {
+    border-left-style: solid #000000;
+    border-top-left-radius: 1vh; 
+    border-bottom-left-radius: 1vh;
+}
+
+table.ZeilenBlau td:last-child {
+    border-right-style: solid #000000;
+    border-bottom-right-radius: 1vh; 
+    border-top-right-radius: 1vh; 
+}

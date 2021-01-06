@@ -1,0 +1,24 @@
+table.Standard {
+    border: 0.1vh solid;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 03vh;
+}
+
+table.Standard td,
+table.Standard th {
+    border: 0.1vh solid;
+    padding: 0.3vh 0.3vh;
+}
+
+table.Standard tbody th {
+    font-weight: bold;
+    border-left: 0.1vh solid;
+}
+
+table.Standard tbody td {
+}
+
+table.Standard tr:nth-child(even) {
+}

@@ -1,0 +1,30 @@
+table.Schwarz {
+    border: 0.1vh solid #000000;
+    background-color: #000000;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 03vh;
+}
+
+
+table.Schwarz th,
+table.Schwarz td {
+    border: 0.1vh solid #FFFFFF;
+    padding: 0.3vh 0.3vh;
+}
+
+table.Schwarz th {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+    background: #000000;
+}
+
+table.Schwarz td {
+    
+}
+
+table.Schwarz tr:nth-child(even) {
+}

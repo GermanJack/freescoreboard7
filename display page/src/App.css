@@ -1,0 +1,15 @@
+div.websocketerror {
+    background-color: red;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2px;
+    position: absolute;
+    right: 32px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+}
+
+.ticker {
+    width: 100%;
+}

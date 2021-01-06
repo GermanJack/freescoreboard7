@@ -1,0 +1,30 @@
+table.Weis {
+    border: 0.1vh solid #ffffff;
+    background-color: #ffffff;
+    width: 100%;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 03vh;
+}
+
+
+table.Weis th,
+table.Weis td {
+    border: 0.1vh solid #000000;
+    padding: 0.3vh 0.3vh;
+}
+
+table.Weis th {
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    background: #ffffff;
+}
+
+table.Weis td {
+    
+}
+
+table.Weis tr:nth-child(even) {
+}
