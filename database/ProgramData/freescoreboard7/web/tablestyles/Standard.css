@@ -1,0 +1,16 @@
+table.Standard {
+    border: 0.1vh solid #000000;
+}
+
+table.Standard td,
+table.Standard th {
+    border: 0.1vh solid #000000;
+}
+
+table.Standard thead {
+    background: #DDDDDD;
+}
+
+table.Standard thead th {
+    font-weight: normal;
+}

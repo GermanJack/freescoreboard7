@@ -1,0 +1,68 @@
+<html>
+<header>
+    <script src="./js/qrcode.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'scoreboard';
+            src: url('./fonts/scoreboard.ttf') format('truetype');
+        }
+    </style>
+</header>
+
+<script>
+    import {
+        getAllUrlParams
+    } from '../js/getparameters.js';
+
+    function myFunction(link) {
+        if (link == 'Kontrollink') {
+            let lnk = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/control/navigation/index.html";
+            //window.open(lnk, "_blank", "titlebar=yes,toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=800,height=600");
+            window.open(lnk, "_blank");
+        } else {
+            let lnk = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/designs/index.html";
+            window.open(lnk, "_blank", "titlebar=yes,toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=800,height=600");
+        }
+    }
+</script>
+
+<body>
+
+    <div style="font-family: 'arial';font-size: 40;">
+        freeScoreBoard 7
+    </div>
+    <button onclick="myFunction('Kontrollink')">Kontrolfenster</button>
+    <div id="linkdiv"></div>
+    <div style="padding: 10px;" id="qrcode"></div>
+    <script type="text/javascript">
+        let link = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/control/navigation/index.html";
+        document.getElementById('linkdiv').innerText = link;
+        let qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: link,
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+
+    <button onclick="myFunction('Displaylink')">Anzeigefenster</button>
+    <div id="linkdivd"></div>
+    <div style="padding: 10px;" id="qrcoded"></div>
+    <script type="text/javascript">
+        let linkd = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/designs/index.html";
+        document.getElementById('linkdivd').innerText = linkd;
+        let qrcoded = new QRCode(document.getElementById("qrcoded"), {
+            text: linkd,
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+
+</html>

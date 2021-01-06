@@ -1,0 +1,40 @@
+table.EinfachBlau {
+    border: 0.1vh solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.EinfachBlau td,
+table.EinfachBlau th {
+    border: 0.1vh solid #AAAAAA;
+    padding: 0.3vh 0.3vh;
+}
+
+table.EinfachBlau tbody td {
+    /* font-size: 13px; */
+}
+
+table.EinfachBlau tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+table.EinfachBlau thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 0.1vh solid #444444;
+}
+
+table.EinfachBlau thead th {
+    /* font-size: 15px; */
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 0.1vh solid #D0E4F5;
+}
+
+table.EinfachBlau thead th:first-child {
+    border-left: none;
+}
